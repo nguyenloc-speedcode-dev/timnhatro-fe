@@ -1,4 +1,6 @@
 {
   "/[locale]/(homepage)/page": "app/[locale]/(homepage)/page.js",
-  "/favicon.ico/route": "app/favicon.ico/route.js"
+  "/[locale]/place/page": "app/[locale]/place/page.js",
+  "/favicon.ico/route": "app/favicon.ico/route.js",
+  "/[locale]/profile/page": "app/[locale]/profile/page.js"
 }

@@ -71,7 +71,9 @@
     @apply bg-background text-foreground;
   }
 }
-
+.bg-linear-gradient-1 {
+  background: linear-gradient(180deg, #ffb8b8, #fafafa);
+}
 .btn-custom-1 {
   @apply h-40 leading-40 font-semibold p-custom-0-14 rounded-24 flex justify-center items-center;
 }
