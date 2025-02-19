@@ -1,7 +1,7 @@
 import { create } from "zustand";
 
 export type GlobalAppState = {
-  open: boolean;
+  openForm: boolean;
 };
 
 export type GlobalAppActions = {
@@ -9,10 +9,10 @@ export type GlobalAppActions = {
 };
 
 export const useAuth = create<GlobalAppState & GlobalAppActions>((set) => ({
-  open: false,
+  openForm: false,
   toggleOpenModalAuth: (val: boolean) => {
     set((state) => {
-      state.open = val;
+      state.openForm = val;
       return { ...state };
     });
   },

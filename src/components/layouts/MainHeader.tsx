@@ -6,8 +6,11 @@ import React from 'react'
 import { FaPencilAlt } from "react-icons/fa";
 import { AiOutlineSearch } from "react-icons/ai";
 import { CgMenuGridO } from "react-icons/cg";
+import { useAuth } from '@/store/useAuth';
 
 const MainHeader = () => {
+
+    const { toggleOpenModalAuth, openForm } = useAuth()
     return (
         <header className='relative w-full z-10 shadow-header-custom-1'>
             <div className='flex items-center justify-between h-[60px] w-full
@@ -58,7 +61,9 @@ const MainHeader = () => {
                         <div className='cursor-pointer'>
                             <button className='btn-custom-1 border border-e03 text-e03
                             hover:bg-e03 hover:text-[#fff]
-                                '>
+                                '
+                                onClick={() => toggleOpenModalAuth(!openForm)}
+                            >
                                 Đăng nhập
                             </button>
                         </div>
